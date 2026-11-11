@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://kit.fontawesome.com/f397d80fda.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="Movies.css"></rel>
+     <script src="Movies.js" defer></script>
+    <title>FreeMeMovies</title>
+</head>
+<body>
+    <nav class="Navigation__wrapper">
+        <div class="container">
+        <div class="row">
+            <div class="nav__header">
+                <img class="logo" src="./MAssets/movieicon.png">
+                 <ul class="nav__links">
+                    <li> <a  class="nav__link" href="#">Home</a></li>
+                    <li> <a  class="nav__link" href="#">Settings</a></li>
+                    <li> <a  class="nav__link" href="#">Profile</a></li>
+                 </ul>
+                </div>
+            </div>
+            </div>
+    <div class="search__box">
+    <input id="search__bar" type="text" placeholder="SEARCH MOVIES">
+    </div>
+    </nav>
+
+<section>
+    <div class="container">
+        <div class="row">
+          <div class="search__details">
+            <h3 class="search__results"> Search Results For "<span id="red" onclick="handleSearch()"></span>"</h3>
+            <select id="filter">
+                <option value="" disabled selected>Filter</option>
+                <option value="new-to-old">New to old</option>
+                <option value="old-to-new">Old to New</option>
+            </select>
+        </div>
+    </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="movie__wrapper">
+             <i class="fa-solid fa-spinner"></i>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
