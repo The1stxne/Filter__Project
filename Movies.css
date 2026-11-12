@@ -1,9 +1,17 @@
 
+html {
+    height: 100%;
+    overscroll-behavior-y: none;
+}
+
 body {
     overflow-x: hidden;
-    margin: 0 auto;
+    overflow-y: auto;
+    margin: 0;
     box-sizing: border-box;
 }
+
+
 
 .Navigation__wrapper {
     background-image: url("./MAssets/rowofseats.jpeg");
@@ -14,8 +22,9 @@ body {
 }
 
 .container {
-    height: 100px;
-    padding-top: 8px;
+    padding-top: 24px;
+    padding-bottom: 8px;
+
 }
 
 .row {
@@ -105,7 +114,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 60vh;
     gap: 80px;
     padding: 0 10%;
     margin: 0 auto;
@@ -140,6 +149,15 @@ body {
    color: red;
    animation: spin 1s linear infinite;
 
+}
+
+footer {
+    background: linear-gradient(
+    135deg,
+    #3B000B 0%,
+    #780018 5%,
+    #D00032 50%
+);
 }
 
 /* animations */
